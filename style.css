@@ -500,6 +500,10 @@ h2 {
   margin: auto;
 }
 .container {
+  /* background-image: url("/img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment: fixed; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -548,6 +552,7 @@ h2 {
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+  margin: auto;
 }
 
 /*footer*/
@@ -939,7 +944,7 @@ h4 {
   }
 
   .card p {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
 
   /*projets*/
@@ -1002,20 +1007,25 @@ h4 {
   /*contact*/
   .container-contact {
     width: 100%;
+    background-image: url("/img/contact.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .illustration {
-    width: 100%;
-  }
+ 
   .formulaire {
-    width: 100%;
+    width: 80%;
   }
   .formulaire input,
   .formulaire textarea {
     width: 100%;
   }
-  .button-63{
-font-size: 0.6rem;
+  .button-63 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 100%;
   }
+ 
 
   /*footer*/
   footer h4 {
@@ -1036,7 +1046,7 @@ font-size: 0.6rem;
     margin: 0;
     padding: 0;
   }
-  body{
+  body {
     position: relative;
   }
   *,

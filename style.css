@@ -597,7 +597,7 @@ h4 {
 }
 
 .quick-links ul li a:hover {
-  color: #007bff;
+  color: #4c5ce9;
 }
 
 .contact-info p {
@@ -944,7 +944,7 @@ h4 {
   }
 
   .card p {
-    font-size: 12px;
+    font-size:0.6rem;
   }
 
   /*projets*/
@@ -1018,4 +1018,19 @@ h4 {
   .formulaire textarea {
     width: 100%;
   }
+
+  /*footer*/
+  footer h4{
+font-size: 1rem;
+  }
+  .quick-links{
+    font-size: 0.7rem;
+  }
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+
 }

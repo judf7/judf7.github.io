@@ -1,5 +1,4 @@
-import { showPage } from "./navigation.js";
-import { handleNavigation } from "./navigation.js";
+
 import { modaleNavigate } from "./navigation.js";
 
 /* gestion du titre*/

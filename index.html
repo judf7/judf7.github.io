@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init("4vby-Rf9OIjbRo0TR");
+  })();
+</script>
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm('service_cwg352i', 'template_gfuu2pg', this)
+              .then(() => {
+                  console.log('SUCCESS!');
+                  alert('Email envoyé avec succès!');
+                   this.reset();
+              }, (error) => {
+                  console.log('FAILED...', error);
+                  alert('Erreur lors de l\'envoi de l\'email.');
+              });
+      });
+  }
+</script>
+
+
+
+    <script defer src="index.js" type="module"></script>
+    <title>Portfolio Justine DI FILIPPO</title>
+  </head>
+  <body>
+    <div class="nav-accueil">
+      <img src="/img/logo.png" alt="logo" class="logo" />
+      <button class="value"><a href="#accueil">Accueil</a></button>
+      <button class="value"><a href="#profil">Profil</a></button>
+      <button class="value"><a href="#skills">Compétences</a></button>
+      <button class="value"><a href="#projects">Projets</a></button>
+      <button class="value"><a href="#contact">Contact</a></button>
+    </div>
+
+    <section class="accueil" id="accueil">
+      <div class="el"></div>
+      <div class="container-accueil">
+        <div class="typing-effect">
+          <h1 class="presentation">
+            Bonjour, je suis Justine <span class="color">DI FILIPPO</span>
+          </h1>
+          <p>Je suis une Développeuse web <span class="text color"></span></p>
+          <button class="btn-contact">
+            <a>Prendre contact</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="profil" id="profil">
+      <h2 class="display-5 text-center  animated-title">
+        A propos de <span class="color">moi</span>
+      </h2>
+      <div class="content">
+        <img class="portrait" src="/img/portrait.jpg" alt="" />
+        <div class="text-description">
+          <h3 class="display-6">Je m'appelle Justine, 33ans</h3>
+          <p class="description">
+            Actuellement en pleine reconversion professionnelle dans le domaine
+            du développement web, je suis à la recherche d'un contrat
+            d’alternance. Rigoureuse et proactive, j’ai toujours apprécié le
+            travail en équipe. Mes compétences en communication, en écoute et en
+            résolution de problèmes, développées au cours de ma carrière de
+            chargée de clientèle puis durant ma formation en autodidacte au
+            développement web, seront des atouts précieux dans mon nouveau
+            métier. Je suis également prête et avide d’apprendre de nouveaux
+            langages et technologies propres à votre environnement pendant ma
+            formation. Déterminée, volontaire et dynamique, je souhaite
+            m’investir pleinement au sein de votre équipe. Je suis convaincue
+            que mon énergie et ma motivation seront des atouts pour votre
+            entreprise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="display-5 text-center mb-4 animated-title">
+        Compétences et <span class="color">technologies</span>
+      </h2>
+
+      <div class="card-container">
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+            <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+            <path
+              fill="#FFF"
+              d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+            ></path>
+            <path
+              fill="#EEE"
+              d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+            ></path>
+          </svg>
+          <p>HTML5</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+            <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+            <path
+              fill="#FFF"
+              d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+            ></path>
+            <path
+              fill="#EEE"
+              d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+            ></path>
+          </svg>
+          <p>CSS3</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#7c4dff"
+              d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"
+            ></path>
+          </svg>
+          <p>Bootstrap</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+            <path
+              fill="#000001"
+              d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
+            ></path>
+          </svg>
+          <p>JavaScript</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#80deea"
+              d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z"
+            ></path>
+            <path
+              fill="#80deea"
+              d="M15.1,44.6c-1,0-1.8-0.2-2.6-0.7C7.6,41.1,8.9,30.2,15.3,19l0,0c3-5.2,6.7-9.6,10.3-12.4c3.9-3,7.4-3.9,9.8-2.5	c2.5,1.4,3.4,4.9,2.8,9.8c-0.6,4.6-2.6,10-5.6,15.2c-3,5.2-6.7,9.6-10.3,12.4C19.7,43.5,17.2,44.6,15.1,44.6z M32.9,5.4	c-1.6,0-3.7,0.9-6,2.7c-3.4,2.7-6.9,6.9-9.8,11.9l0,0c-6.3,10.9-6.9,20.3-3.6,22.2c1.7,1,4.5,0.1,7.6-2.3c3.4-2.7,6.9-6.9,9.8-11.9	c2.9-5,4.8-10.1,5.4-14.4c0.5-4-0.1-6.8-1.8-7.8C34,5.6,33.5,5.4,32.9,5.4z"
+            ></path>
+            <path
+              fill="#80deea"
+              d="M33,44.6c-5,0-12.2-6.1-17.6-15.6C8.9,17.8,7.6,6.9,12.5,4.1l0,0C17.4,1.3,26.2,7.8,32.7,19	c3,5.2,5,10.6,5.6,15.2c0.7,4.9-0.3,8.3-2.8,9.8C34.7,44.4,33.9,44.6,33,44.6z M13.5,5.8c-3.3,1.9-2.7,11.3,3.6,22.2	c6.3,10.9,14.1,16.1,17.4,14.2c1.7-1,2.3-3.8,1.8-7.8c-0.6-4.3-2.5-9.4-5.4-14.4C24.6,9.1,16.8,3.9,13.5,5.8L13.5,5.8z"
+            ></path>
+            <circle cx="24" cy="24" r="4" fill="#80deea"></circle>
+          </svg>
+          <p>ReactJS</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"
+            ></path>
+          </svg>
+          <p>GitHub</p>
+        </div>
+        <div class="card">
+          <img
+            width="96"
+            height="96"
+            src="https://img.icons8.com/color/96/api-settings.png"
+            alt="api-settings"
+          />
+          <p>APIRest</p>
+        </div>
+        <div class="card">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 48 48"
+          >
+            <linearGradient
+              id="lfK0TEarAX_CVWY9eruXya_PxQoyT1s0uFh_gr1"
+              x1="18.179"
+              x2="37.232"
+              y1="6.205"
+              y2="21.237"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#0837c4"></stop>
+              <stop offset=".242" stop-color="#0b4bce"></stop>
+              <stop offset=".738" stop-color="#1071df"></stop>
+              <stop offset="1" stop-color="#127fe6"></stop>
+            </linearGradient>
+            <path
+              fill="url(#lfK0TEarAX_CVWY9eruXya_PxQoyT1s0uFh_gr1)"
+              d="M21.676,19.303c0,0,0.814-3.255,4.691-3.399h11.777c0,0-3.399-0.287-4.069-4.404	c-0.67-4.117-2.441-5.745-4.931-5.793c-2.489-0.048-3.638,2.585-3.926,3.495C24.931,10.112,21.676,19.303,21.676,19.303z"
+            ></path>
+            <linearGradient
+              id="lfK0TEarAX_CVWY9eruXyb_PxQoyT1s0uFh_gr2"
+              x1="8.61"
+              x2="20.866"
+              y1="36.864"
+              y2="1.503"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#f8c704"></stop>
+              <stop offset=".065" stop-color="#f1c609"></stop>
+              <stop offset=".163" stop-color="#dcc319"></stop>
+              <stop offset=".281" stop-color="#babe31"></stop>
+              <stop offset=".415" stop-color="#8cb754"></stop>
+              <stop offset=".561" stop-color="#50ae7f"></stop>
+              <stop offset=".592" stop-color="#43ac89"></stop>
+              <stop offset=".617" stop-color="#41ad93"></stop>
+              <stop offset=".737" stop-color="#37b0be"></stop>
+              <stop offset=".845" stop-color="#30b2dd"></stop>
+              <stop offset=".936" stop-color="#2cb4f0"></stop>
+              <stop offset="1" stop-color="#2ab4f7"></stop>
+            </linearGradient>
+            <path
+              fill="url(#lfK0TEarAX_CVWY9eruXyb_PxQoyT1s0uFh_gr2)"
+              d="M19.234,29.261l6.032-20.25	c0,0,1.149-3.399,3.878-3.303H14.016c0,0-2.585,0-4.452,2.968c0,0-2.872,3.734-4.548,11.394s-1.005,8.09-1.005,8.09	s-0.431,4.213,6.032,3.878h4.979C15.021,32.037,18.037,32.085,19.234,29.261z"
+            ></path>
+            <path
+              d="M28.887,6.707l2.471-0.404c-0.596-0.358-1.31-0.544-2.05-0.584l-0.199-0.011 c-0.004,0-0.007,0-0.011-0.001c-0.016,0-0.031,0.002-0.048,0.002c-0.175-0.001-0.34,0.015-0.502,0.039 c-0.069,0.01-0.136,0.023-0.202,0.037c-0.105,0.023-0.206,0.052-0.305,0.084c-0.452,0.149-0.848,0.386-1.186,0.677 c-0.117,0.102-0.225,0.209-0.329,0.32c-0.761,0.811-1.182,1.833-1.34,2.334c-0.039,0.125-0.139,0.416-0.274,0.808l-2.218,7.444 c0.086-0.092,0.198-0.179,0.297-0.269c0.056-0.051,0.108-0.103,0.168-0.152c0.088-0.072,0.18-0.139,0.277-0.208 c0.166-0.118,0.341-0.231,0.537-0.333c0.025-0.013,0.043-0.03,0.069-0.043l2.131-7.154C26.174,9.296,27.066,6.787,28.887,6.707z"
+              opacity=".05"
+            ></path>
+            <path
+              d="M28.864,6.207l1.476-0.34c0,0-0.686-0.176-1.252-0.155c-0.42,0.015-0.802,0.072-1.147,0.203	c-0.027,0.011-0.056,0.019-0.083,0.031c-0.081,0.033-0.159,0.073-0.236,0.112c-0.057,0.03-0.115,0.059-0.17,0.091	c-0.048,0.028-0.094,0.058-0.141,0.088c-0.085,0.056-0.169,0.114-0.249,0.176c-0.017,0.013-0.033,0.026-0.049,0.039	c-0.429,0.346-0.773,0.767-1.039,1.168c-0.006,0.009-0.012,0.017-0.017,0.026c-0.029,0.044-0.053,0.086-0.08,0.13	c-0.342,0.562-0.556,1.104-0.658,1.428c-0.018,0.058-0.05,0.152-0.091,0.274l-2.377,7.978c0.18-0.194,0.388-0.385,0.626-0.563	l2.305-7.738C25.685,9.143,26.684,6.292,28.864,6.207z"
+              opacity=".07"
+            ></path>
+            <linearGradient
+              id="lfK0TEarAX_CVWY9eruXyc_PxQoyT1s0uFh_gr3"
+              x1="9.38"
+              x2="27.188"
+              y1="35.55"
+              y2="35.358"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#ffb155"></stop>
+              <stop offset=".008" stop-color="#ffb055"></stop>
+              <stop offset=".475" stop-color="#eb7447"></stop>
+              <stop offset=".819" stop-color="#df4e3f"></stop>
+              <stop offset="1" stop-color="#da403c"></stop>
+            </linearGradient>
+            <path
+              fill="url(#lfK0TEarAX_CVWY9eruXyc_PxQoyT1s0uFh_gr3)"
+              d="M26.474,28.607	c0,0-0.814,3.255-4.691,3.399H10.006c0,0,3.399,0.287,4.069,4.404s2.441,5.745,4.931,5.793s3.638-2.585,3.926-3.495	C23.219,37.799,26.474,28.607,26.474,28.607z"
+            ></path>
+            <path
+              d="M19.255,41.171l-2.471,0.404c0.596,0.358,1.31,0.544,2.05,0.584l0.199,0.011 c0.004,0,0.007,0,0.011,0.001c0.016,0,0.031-0.002,0.048-0.002c0.175,0.001,0.34-0.015,0.502-0.039 c0.069-0.01,0.136-0.023,0.202-0.037c0.105-0.023,0.206-0.052,0.305-0.084c0.452-0.149,0.848-0.386,1.186-0.677 c0.117-0.102,0.225-0.209,0.329-0.32c0.761-0.811,1.182-1.833,1.34-2.334c0.039-0.125,0.139-0.416,0.274-0.808l2.218-7.444 c-0.086,0.092-0.198,0.179-0.297,0.269c-0.056,0.051-0.108,0.103-0.168,0.152c-0.088,0.072-0.18,0.139-0.277,0.208 c-0.166,0.118-0.341,0.231-0.537,0.333c-0.025,0.013-0.043,0.03-0.069,0.043l-2.131,7.154 C21.969,38.582,21.077,41.091,19.255,41.171z"
+              opacity=".05"
+            ></path>
+            <path
+              d="M19.278,41.671l-1.476,0.34c0,0,0.686,0.176,1.252,0.155c0.42-0.015,0.802-0.072,1.147-0.203	c0.027-0.011,0.056-0.019,0.083-0.031c0.081-0.033,0.159-0.073,0.236-0.112c0.057-0.03,0.115-0.059,0.17-0.091	c0.048-0.028,0.094-0.058,0.141-0.088c0.085-0.056,0.169-0.114,0.249-0.176c0.017-0.013,0.033-0.026,0.049-0.039	c0.429-0.346,0.773-0.767,1.039-1.168c0.006-0.009,0.012-0.017,0.017-0.026c0.029-0.044,0.053-0.086,0.08-0.13	c0.342-0.562,0.556-1.104,0.658-1.428c0.018-0.058,0.05-0.152,0.091-0.274l2.377-7.978c-0.18,0.194-0.388,0.385-0.626,0.563	l-2.305,7.738C22.457,38.736,21.458,41.586,19.278,41.671z"
+              opacity=".07"
+            ></path>
+            <linearGradient
+              id="lfK0TEarAX_CVWY9eruXyd_PxQoyT1s0uFh_gr4"
+              x1="28.874"
+              x2="37.108"
+              y1="43.472"
+              y2="12.068"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#ffb152"></stop>
+              <stop offset=".531" stop-color="#f36284"></stop>
+              <stop offset=".994" stop-color="#a355e9"></stop>
+            </linearGradient>
+            <path
+              fill="url(#lfK0TEarAX_CVWY9eruXyd_PxQoyT1s0uFh_gr4)"
+              d="M28.915,18.65l-6.07,20.263	c0,0-1.111,3.386-3.839,3.29h15.128c0,0,2.585,0,4.452-2.968c0,0,2.872-3.734,4.548-11.394c1.676-7.66,1.005-8.09,1.005-8.09	s0.431-4.213-6.032-3.878h-4.979C33.128,15.873,30.112,15.826,28.915,18.65z"
+            ></path>
+          </svg>
+          <p>Copilot</p>
+        </div>
+        <div class="card">
+          <img
+            width="96"
+            height="96"
+            src="https://img.icons8.com/parakeet/96/php.png"
+            alt="php"
+          />
+          <p>PHP 8</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000"
+            alt="vite Logo"
+          />
+          <p>Vite</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+            alt="node js Logo"
+          />
+          <p>node JS</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="display-5 text-center  animated-title">Projets</h2>
+
+      <div class="card-container-project">
+        <div class="card-project" id="project1">
+          <img src="/img/projet-raymond.jpg" alt="projet raymond" />
+          <div class="card-project-title">
+            <p>site vitrine mannequin</p>
+          </div>
+        </div>
+        <div class="card-project" id="project2">
+          <img src="/img/projet-chez-jo.jpg" alt="projet chez jo" />
+          <div class="card-project-title">
+            <p>site restaurant</p>
+          </div>
+        </div>
+        <div class="card-project" id="project3">
+          <img
+            src="/img/project-countries.jpg"
+            alt="Project countries"
+            style="height: 15vh"
+          />
+          <div class="card-project-title">
+            <p>appli countries</p>
+          </div>
+        </div>
+        <div class="card-project"id="project4">
+          <img
+            src="/img/projet-mon-blog.jpg"
+            alt="Project countries"
+            style="height: 15vh"
+          />
+          <div class="card-project-title" >
+            <p>Blog</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modale -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4 class="modal-title display-5">Site vitrine Mannequin</h4>
+          <h5 class="modal-description ">Présentation du site</h5>
+          <p>Site web pour présentation d'une activité mannequin. Mise en avant des derniers shooting et des polas.</p>
+          <h5>Technologies utilisées</h5>
+          <p>HTML, CSS</p>
+          <a href="http://justine.binaryfrog.fr/arnaud/" target="_blank">lien vers le site</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4 class="modal-title display-5">Site Restaurant Chez Jo</h4>
+          <h5 class="modal-description ">Présentation du site</h5>
+          <p>Site web pour un restaurant. Mise en avant de l'identité, la carte , les suggestions.</p>
+          <h5>Technologies utilisées</h5>
+          <p>HTML, CSS, javascript, bootstrap</p>
+          <a href="http://justine.binaryfrog.fr/chez-jo/" target="_blank">lien vers le site</a>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4 class="modal-title">Application de recherche de Pays</h4>
+          <h5 class="modal-description ">Présentation du site</h5>
+          <p>Application de recherche des pays du monde pouvant etre classé par ordre croissant ou décroissant ou par population.</p>
+          <h5>Technologies utilisées</h5>
+          <p>HTML, CSS, ReactJS, API, Bootstrap</p>
+          <a href="https://github.com/judf7/countries-API-react" target="_blank">lien vers le repositoring</a>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4 class="modal-title">Blog personnel</h4>
+          <h5 class="modal-description ">Présentation du site</h5>
+          <p>Site web sous forme de blog personnel visant à l'utilisation de REACT</p>
+          <h5>Technologies utilisées</h5>
+          <p>HTML, CSS, ReactJS, Bootstrap</p>
+          <a href="https://github.com/judf7/mon-blog" target="_blank">lien vers le repositoring</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="display-5  text-center my-5 ">Contactez-moi</h2>
+      <div class="container-contact">
+        <div class="container">
+          <div class="illustration">
+            <img src="/img/contact.jpg" alt="Illustration" width="300" />
+          </div>
+          <div class="formulaire">
+            <form id="contactForm">
+            <input type="text" name="name" placeholder="Nom" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" placeholder="Téléphone" name="phone" required />
+            <textarea placeholder="Message" rows="5" name="message" required></textarea>
+            <button class="button-63" type="submit" role="button">
+              Envoyer
+            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="nav-burger">
+      <input
+        class="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label for="menu-icon"></label>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="quick-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h4>Pour me contacter</h4>
+          <p class="color">Téléphone : <a href="tel:+33612345678">+33 6 35 24 29 05</a></p>
+          <p class="color">
+            Email : <a href="mailto:justinedf@outlook.fr">justinedf@outlook.fr</a>
+          </p>
+          <p class="color">13010 Marseille</p>
+          <a href="https://www.linkedin.com/in/justine-difilippo-675036148/" target="_blank">
+            <img
+              src="/img/logo-linkedin.png"
+              alt="LinkedIn Logo"
+              width="30"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> 
+<script type="text/javascript"> 
+    (function(){ 
+      emailjs.init("4vby-Rf9OIjbRo0TR"); 
+    })
+</script> -->
+  </body>
+</html>

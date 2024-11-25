@@ -2,6 +2,16 @@ import { showPage } from "./navigation.js";
 import { handleNavigation } from "./navigation.js";
 import { modaleNavigate } from "./navigation.js";
 
+/* gestion du titre*/
+document.addEventListener("visibilitychange", function() {
+  if (document.hidden) {
+    document.title = "🙏Revenez sur mon Portfolio";
+  } else {
+    document.title = "Portfolio | Justine DI FILIPPO";
+  }
+});
+
+
 /*animation texte*/
 const texts = ["Déterminée", "Passionnée", "Adaptable", "Cool"];
 let count = 0;

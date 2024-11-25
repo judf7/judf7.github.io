@@ -629,7 +629,6 @@ h4 {
   }
   .nav-burger {
     opacity: 1;
-
   }
   [type="checkbox"]:checked,
   [type="checkbox"]:not(:checked) {
@@ -1027,10 +1026,44 @@ h4 {
     font-size: 0.7rem;
     font-weight: 500;
   }
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  img,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .column {
+    flex: 1;
+    min-width: 0;
+  }
+  .header,
+  .footer {
+    width: 100%;
+  }
+  .section {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
   }
 }

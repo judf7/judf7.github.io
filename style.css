@@ -233,7 +233,6 @@ p {
 .btn-contact:hover::before {
   animation: rotate 1s;
   transition: all 0.5s;
-
 }
 
 @keyframes rotate {
@@ -355,9 +354,7 @@ h2 {
 .btn-cv:hover::before {
   animation: rotate 1s;
   transition: all 0.5s;
-
 }
-
 
 /*compétences*/
 .skills {
@@ -384,7 +381,7 @@ h2 {
 }
 
 .card img {
- max-width: 100px;
+  max-width: 100px;
   max-height: 100px;
 }
 
@@ -632,6 +629,7 @@ h4 {
   }
   .nav-burger {
     opacity: 1;
+
   }
   [type="checkbox"]:checked,
   [type="checkbox"]:not(:checked) {
@@ -704,7 +702,7 @@ h4 {
       transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  .nav-burger{
+  .nav-burger {
     position: fixed;
     top: 33px;
     right: 30px;
@@ -748,7 +746,7 @@ h4 {
       border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
     }
   }
-  .nav{
+  .nav {
     position: fixed;
     top: 33px;
     right: 40px;
@@ -780,7 +778,6 @@ h4 {
       transform 250ms 700ms ease,
       width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
       height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-      
   }
 
   .nav ul {
@@ -851,7 +848,6 @@ h4 {
   }
   .nav ul li a:hover:after {
     width: 100%;
-
   }
 
   .menu-icon:checked ~ .nav ul li {
@@ -944,7 +940,7 @@ h4 {
   }
 
   .card p {
-    font-size:0.6rem;
+    font-size: 0.5rem;
   }
 
   /*projets*/
@@ -1020,10 +1016,10 @@ h4 {
   }
 
   /*footer*/
-  footer h4{
-font-size: 1rem;
+  footer h4 {
+    font-size: 1rem;
   }
-  .quick-links{
+  .quick-links {
     font-size: 0.7rem;
   }
   .contact-info p {
@@ -1031,6 +1027,10 @@ font-size: 1rem;
     font-size: 0.7rem;
     font-weight: 500;
   }
-
-
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }

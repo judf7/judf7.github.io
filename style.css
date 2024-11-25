@@ -1004,7 +1004,7 @@ h4 {
     width: 100%;
   }
   .illustration {
-    width: 40%;
+    width: 100%;
   }
   .formulaire {
     width: 100%;
@@ -1012,6 +1012,9 @@ h4 {
   .formulaire input,
   .formulaire textarea {
     width: 100%;
+  }
+  .button-63{
+font-size: 0.6rem;
   }
 
   /*footer*/
@@ -1032,6 +1035,9 @@ h4 {
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+  body{
+    position: relative;
   }
   *,
   *::before,

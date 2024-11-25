@@ -1027,7 +1027,7 @@ h4 {
     font-size: 0.7rem;
     font-weight: 500;
   }
-  body {
+  html, body {
     overflow-x: hidden;
     width: 100%;
     margin: 0;

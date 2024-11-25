@@ -1012,9 +1012,11 @@ h4 {
     display: flex;
     flex-wrap: wrap;
   }
- 
+ .illustration{
+  width: 30%;
+ }
   .formulaire {
-    width: 80%;
+    width: 100%;
   }
   .formulaire input,
   .formulaire textarea {
